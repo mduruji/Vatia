@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'vatia'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Use 'testImplementation' instead of 'testCompile'
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.jsoup:jsoup:1.11.1'
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
